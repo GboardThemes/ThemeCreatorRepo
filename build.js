@@ -17,6 +17,7 @@ const build = async () => {
                 styleSheetMd: fs.readFileSync(`./presets/${preset}/styleSheetMd.css`, 'utf8'),
                 styleSheetMdBorder: fs.readFileSync(`./presets/${preset}/styleSheetMdBorder.css`, 'utf8'),
                 metadata: JSON.parse(fs.readFileSync(`./presets/${preset}/metadata.json`, 'utf8')),
+                preview: fs.readFileSync(`./presets/${preset}/preview.html`, 'utf8'),
                 imageBase64: []
             }
 
