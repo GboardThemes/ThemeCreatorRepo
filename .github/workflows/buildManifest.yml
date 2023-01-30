@@ -6,6 +6,10 @@ on:
       - main
   workflow_dispatch:
 
+concurrency:
+  group: 'manifest'
+  cancel-in-progress: true
+
 jobs:
   build:
     name: Build Manifest
