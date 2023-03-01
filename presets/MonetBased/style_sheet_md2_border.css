@@ -1,0 +1,158 @@
+.keytop {
+    elevation: 1.0;
+    shadow_color: @color_set_a8;
+    
+}
+.keytop.for-candidate-key,
+.keytop.for-dashboard-key,
+.keytop.for-category-key,
+.keytop.transparent {
+    elevation: 1.0;
+    shadow_color: @color_set_a8;
+    
+}
+
+.keytop.transparent:pressed{
+	background_color: @color_set_a3;
+	alpha: 0.4;
+    shadow_color: @color_set_a8;
+    elevation: 1;
+}
+
+/* MD2 */
+@def color_state_border_key_action_pressed @color_set_a3;
+@def color_state_border_key_action @color_set_a2;
+@def color_label_space_key @color_set_a5;
+@def color_state_key_pressed @color_set_a3;
+@def color_state_key @color_set_a2;
+/* temp */
+@def color_state_key_dark_pressed @color_set_a6;
+@def color_state_key_dark @color_set_a3;
+@def internal_space_branding_color @color_set_a5;
+@def default_bordered_key_dark_color_pressed @color_state_key_dark_pressed;
+@def default_bordered_key_dark_color @color_state_key_dark;
+@def default_bordered_key_color_pressed @color_state_key_pressed;
+@def default_bordered_key_color @color_state_key;
+
+/* begin of pill shaped key */
+
+@def default_pill_shaped_key_color @color_set_a6;
+@def default_pill_shaped_key_color_pressed @color_set_a7;
+@def default_pill_shaped_key_label_color @color_set_a1;
+@def default_pill_shaped_key_label_color_pressed @color_set_a1;
+
+/* end of pill shaped key colors */
+.icon.for-space-branding{
+    color: @internal_space_branding_color;
+    alpha: 0.3;
+}
+.label.for-space-key {
+    color: @color_set_a5;
+}
+.label.for-space-key:pressed {
+    color: @color_set_a5;
+}
+.keytop,
+.keytop.for-numpad-big-panel {
+    elevation: 1;
+    shadow_color: @color_set_a8;
+}
+.keytop.for-space-bar {
+    shadow_color: @color_set_a8;
+    elevation: 1;
+}
+.keytop.for-space-bar:pressed {
+    shadow_color: @color_set_a8;
+    elevation: 1;
+}
+.keytop:pressed{
+    shadow_color: @color_set_a8;
+    elevation: 1;
+	}
+.keytop.dark,
+.keytop.for-action-key {
+    elevation: 1;
+}
+.keytop.transparent,
+.keytop.for-numpad-big-panel-holder {
+    background_color: @color_set_a3;
+    elevation: 1;
+}
+.divider.for-numpad-big-panel {
+    visibility: gone;
+}
+
+.keytop.dark.for-numpad-big-panel,
+.keytop.for-numpad-big-panel {
+    shadow_color: @color_set_a8;
+    elevation: 1;
+    background_color: @color_state_key;
+}
+
+.keytop.dark.for-numpad,
+.keytop.for-numpad {
+    shadow_color: @color_set_a8;
+    elevation: 1;
+}
+.icon.for-keyboard-bottom-left-key{
+	color: @color_set_a5;
+	}
+.keytop.dark.for-scrollable-key-holder.for-numpad,
+.keytop.for-scrollable-key-holder.for-numpad {
+    background_color: @color_set_a3;
+    shadow_color: @color_set_a8;
+    elevation: 1;
+}
+.keytop.dark.for-scrollable-key-holder.for-numpad:pressed,
+.keytop.for-scrollable-key-holder.for-numpad:pressed {
+    background_color: @color_set_a6;
+    shadow_color: @color_set_a8;
+    elevation: 1;
+}
+.icon.for-action-key:pressed,
+.icon.for-action-key {
+    color: @color_set_a1;
+alpha: 1;
+}
+.icon.for-action-key.for-action-default-key:pressed,
+.icon.for-action-key.for-action-default-key {
+    color: @color_set_a1;
+alpha: 1;
+}
+.keytop.for-action-key:pressed {
+    background_color: @color_set_a7;
+    shadow_color: @color_set_a8;
+    elevation: 1;
+}
+.keytop.for-action-key {
+    background_color: @color_set_a4;
+    shadow_color: @color_set_a8;
+    elevation: 1;
+}
+.keytop.for-action-key.for-action-default-key:pressed {
+    background_color: @color_set_a7;
+    shadow_color: @color_set_a8;
+    elevation: 1;
+}
+.keytop.for-action-key.for-action-default-key {
+    background_color:  @color_set_a4;
+    shadow_color: @color_set_a8;
+    elevation: 1;
+}
+
+
+/* begin of pill shaped key */
+
+.keytop.pill-shaped > .keytop.for-action-key,
+.keytop.pill-shaped > .keytop.for-action-key.for-action-default-key
+{
+	background_color: @color_set_a4;
+	}
+
+.keytop.pill-shaped >.keytop.for-action-key:pressed,
+.keytop.pill-shaped > .keytop.for-action-key.for-action-default-key:pressed
+{
+	background_color: @color_set_a7;
+	}
+	
+/* end of pill shaped key */
