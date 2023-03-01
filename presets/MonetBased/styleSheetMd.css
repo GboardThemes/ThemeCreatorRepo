@@ -1,102 +1,102 @@
-@def color_header @color_set_a1;
-@def color_base @color_set_a1;
-@def color_icon_action @color_set_a5;
+@def color_header @web_color_bg;
+@def color_base @web_color_bg;
+@def color_icon_action @web_color_label;
 /* This value is not used for action key background, since it is special on material theme. */
-@def color_state_action_pressed @color_set_a7;
+@def color_state_action_pressed @web_color_accent_pressed;
 /* This value is not used for action key background, since it is special on material theme. */
-@def color_state_action @color_set_a4;
-@def color_state_action_popup_pressed @color_set_a7;
-@def color_state_action_popup @color_set_a4;
-@def color_keyboard_editing_button_background @color_set_a5;
-@def color_action_default @color_set_a5;
-@def color_icon @color_set_a5;
-@def color_label @color_set_a5;
-@def color_emoji_handwriting_hint_label @color_set_a5;
-@def color_label_secondary @color_set_a5;
+@def color_state_action @web_color_accent;
+@def color_state_action_popup_pressed @web_color_accent_pressed;
+@def color_state_action_popup @web_color_accent;
+@def color_keyboard_editing_button_background @web_color_label;
+@def color_action_default @web_color_label;
+@def color_icon @web_color_label;
+@def color_label @web_color_label;
+@def color_emoji_handwriting_hint_label @web_color_label;
+@def color_label_secondary @web_color_label;
 /* Undocumented */
-@def color_label_dynamic @color_set_a5;
-@def color_label_header_active @color_set_a5;
-@def color_label_header_inactive @color_set_a5;
+@def color_label_dynamic @web_color_label;
+@def color_label_header_active @web_color_label;
+@def color_label_header_inactive @web_color_label;
 /* Undocumented */
-@def color_state_label_candidate_selected @color_set_a5;
+@def color_state_label_candidate_selected @web_color_label;
 /* Undocumented */
-@def color_state_label_candidate @color_set_a5;
-@def color_popup_label @color_set_a5;
-@def color_state_popup_label_pressed @color_set_a1;
+@def color_state_label_candidate @web_color_label;
+@def color_popup_label @web_color_label;
+@def color_state_popup_label_pressed @web_color_bg;
 @def default_popup_item_color_pressed @color_state_action_popup;
-@def color_label_left_panel @color_set_a5;
-@def color_label_function_key @color_set_a5;
-@def color_label_space_key @color_set_a5;
-@def color_icon_more_candidates_background @color_set_a5;
-@def color_state_key_pressed @color_set_a1;
-@def color_state_key @color_set_a1;
-@def color_state_key_dark_pressed @color_set_a1;
-@def color_state_key_dark @color_set_a1;
-@def color_state_key_transparent_pressed @color_set_a2;
-@def color_state_key_transparent @color_set_a1;
-@def color_state_space_bar_pressed @color_set_a3;
-@def color_state_space_bar @color_set_a2;
+@def color_label_left_panel @web_color_label;
+@def color_label_function_key @web_color_label;
+@def color_label_space_key @web_color_label;
+@def color_icon_more_candidates_background @web_color_label;
+@def color_state_key_pressed @web_color_bg;
+@def color_state_key @web_color_bg;
+@def color_state_key_dark_pressed @web_color_bg;
+@def color_state_key_dark @web_color_bg;
+@def color_state_key_transparent_pressed @web_color_key_bg;
+@def color_state_key_transparent @web_color_bg;
+@def color_state_space_bar_pressed @web_color_tertiary_key_bg;
+@def color_state_space_bar @web_color_key_bg;
 /* Undocumented */
-@def color_state_dashboard_mask_pressed @color_set_a2;
+@def color_state_dashboard_mask_pressed @web_color_key_bg;
 /* Undocumented */
-@def color_state_dashboard_mask @color_set_a1;
-@def color_keyboard_separator @color_set_a1;
-@def color_keyboard_separator_numpad @color_set_a1;
-@def color_keyboard_top_separator @color_set_a1;
+@def color_state_dashboard_mask @web_color_bg;
+@def color_keyboard_separator @web_color_bg;
+@def color_keyboard_separator_numpad @web_color_bg;
+@def color_keyboard_top_separator @web_color_bg;
 /* Undocumented */
-@def color_candidate_separator @color_set_a3;
+@def color_candidate_separator @web_color_tertiary_key_bg;
 /* Undocumented */
-@def color_candidate_panel_separator @color_set_a1;
-@def color_key_paging_scrollbar @color_set_a2;
-@def color_key_paging_scrollbar_background @color_set_a1;
+@def color_candidate_panel_separator @web_color_bg;
+@def color_key_paging_scrollbar @web_color_key_bg;
+@def color_key_paging_scrollbar_background @web_color_bg;
 /* Revisit */
-@def color_state_popup_item_pressed @color_set_a4;
-@def color_popup_background @color_set_a2;
-@def color_state_access_point_item_background @color_set_a2;
-@def color_access_points_menu_background @color_set_a3
+@def color_state_popup_item_pressed @web_color_accent;
+@def color_popup_background @web_color_key_bg;
+@def color_state_access_point_item_background @web_color_key_bg;
+@def color_access_points_menu_background @web_color_secondary_key_bg
 /* Revisit */
-@def color_generic_extension_background_activated @color_set_a1;
-@def color_generic_extension_background @color_set_a1;
-@def color_access_point_panel_item_background @color_set_a3
-@def color_access_points_panel_background @color_set_a3
-@def color_background_text_editing_body @color_set_a5;
-@def color_background_text_editing_separator @color_set_a2;
+@def color_generic_extension_background_activated @web_color_bg;
+@def color_generic_extension_background @web_color_bg;
+@def color_access_point_panel_item_background @web_color_secondary_key_bg
+@def color_access_points_panel_background @web_color_secondary_key_bg
+@def color_background_text_editing_body @web_color_label;
+@def color_background_text_editing_separator @web_color_key_bg;
 /* Undocumented */
-@def color_label_text_editing_unactivate_key @color_set_a5;
-@def color_keyboard_editing_overlay @color_set_a2;
-@def color_keyboard_editing_button @color_set_a2;
-@def color_notice_text @color_set_a2;
-@def color_state_prime_header_tab_pressed @color_set_a3;
+@def color_label_text_editing_unactivate_key @web_color_label;
+@def color_keyboard_editing_overlay @web_color_key_bg;
+@def color_keyboard_editing_button @web_color_key_bg;
+@def color_notice_text @web_color_key_bg;
+@def color_state_prime_header_tab_pressed @web_color_tertiary_key_bg;
 /* Override pre-defined variable definition */
 
 /* GIF rules */
-@def color_state_gif_category_text_selected @color_set_a4;
-@def color_state_gif_category_text @color_set_a4;
-@def color_expression_category_inactive @color_set_a4;
-@def color_state_gif_category_background_selected @color_set_a2;
-@def color_state_gif_category_background @color_set_a1;
-@def color_gif_search_bar_query @color_set_a5;
-@def color_gif_search_bar_query_hint @color_set_a5;
+@def color_state_gif_category_text_selected @web_color_accent;
+@def color_state_gif_category_text @web_color_accent;
+@def color_expression_category_inactive @web_color_accent;
+@def color_state_gif_category_background_selected @web_color_key_bg;
+@def color_state_gif_category_background @web_color_bg;
+@def color_gif_search_bar_query @web_color_label;
+@def color_gif_search_bar_query_hint @web_color_label;
 
 /* Sticker */
 
-@def color_sticker_btn_background @color_set_a5;
-@def color_sticker_icon @color_set_a5;
-@def color_sticker_accent_icon @color_set_a5;
-@def color_expression_footer_background @color_set_a2;
-@def color_expression_corpus_selector_background_active @color_set_a4;
-@def internal_space_branding_color @color_set_a7;
+@def color_sticker_btn_background @web_color_label;
+@def color_sticker_icon @web_color_label;
+@def color_sticker_accent_icon @web_color_label;
+@def color_expression_footer_background @web_color_key_bg;
+@def color_expression_corpus_selector_background_active @web_color_accent;
+@def internal_space_branding_color @web_color_accent_pressed;
 /* begin of pill shaped key colors */
-@def default_action_key_background_color @color_set_a4;
-@def default_action_key_background_color_pressed @color_set_a7;
-@def default_pill_shaped_key_color @color_set_a6;
-@def default_pill_shaped_key_color_pressed @color_set_a7;
-@def default_pill_shaped_key_label_color @color_set_a1;
-@def default_pill_shaped_key_label_color_pressed @color_set_a1;
-@def default_borderless_space_bar_color @color_set_a2;
-@def default_borderless_space_bar_color_pressed @color_set_a3;
-@def default_pill_shaped_key_icon_color @color_set_a5;
-@def default_pill_shaped_key_icon_color_pressed @color_set_a5;
+@def default_action_key_background_color @web_color_accent;
+@def default_action_key_background_color_pressed @web_color_accent_pressed;
+@def default_pill_shaped_key_color @web_color_secondary_key_bg_pressed;
+@def default_pill_shaped_key_color_pressed @web_color_accent_pressed;
+@def default_pill_shaped_key_label_color @web_color_bg;
+@def default_pill_shaped_key_label_color_pressed @web_color_bg;
+@def default_borderless_space_bar_color @web_color_key_bg;
+@def default_borderless_space_bar_color_pressed @web_color_tertiary_key_bg;
+@def default_pill_shaped_key_icon_color @web_color_label;
+@def default_pill_shaped_key_icon_color_pressed @web_color_label;
 
 .space_bar:pressed{
 	background_color: @default_borderless_space_bar_color_pressed;
@@ -118,35 +118,35 @@
     background_shape: rectangle;
 }
 .icon.translate.switch{
-	color: @color_set_a6;
+	color: @web_color_secondary_key_bg_pressed;
 }
 .translate.language.header{
-	color: @color_set_a4;
+	color: @web_color_accent;
 }
 .translate.language.bg{
-    background_color: @color_set_a3;
+    background_color: @web_color_tertiary_key_bg;
 }
 .translate.queryholder{
-    background_color: @color_set_a2;
-	color: @color_set_a4;
+    background_color: @web_color_key_bg;
+	color: @web_color_accent;
 }
 .translate-query{
-    background_color: @color_set_a5;
+    background_color: @web_color_label;
 }
 .translate.language_entry.indicator{
-	color: @color_set_a5;
+	color: @web_color_label;
 }
 .translate.language-selection.background{
-    background_color: @color_set_a2;
+    background_color: @web_color_key_bg;
 }
 
 .translate.language.separator{
-    background_color: @color_set_a4;
+    background_color: @web_color_accent;
 }
 
 .translate.language_entry{
-    background_color: @color_set_a4;
-	color: @color_set_a5;
+    background_color: @web_color_accent;
+	color: @web_color_label;
 }
 
 .navbar.for-expression-footer{
@@ -154,159 +154,159 @@
 }
 
 .bitmoji-logo-text{
-	color: @color_set_a5;
+	color: @web_color_label;
 	alpha: 1;
 }
 .icon.clipboard-item-check-filled{
-	color: @color_set_a4;
+	color: @web_color_accent;
 	alpha: 1;
 }
 
 .icon.clipboard-item-check-inner{
-	color: @color_set_a1;
+	color: @web_color_bg;
 	alpha: 1;
 }
 
 .tooltip.positive_button{
-    background_color: @color_set_a4;
-	color: @color_set_a1;
+    background_color: @web_color_accent;
+	color: @web_color_bg;
 	alpha: 1;
 }
 .keyboard-clipboard-item{
-	background_color: @color_set_a3;
+	background_color: @web_color_tertiary_key_bg;
 	alpha: 1;
 }
 .keyboard-clipboard-popup{
-	background_color: @color_set_a3;
+	background_color: @web_color_tertiary_key_bg;
 	alpha: 1;
 }
 .keyboard-clipboard-tooltip{
-	background_color: @color_set_a2;
+	background_color: @web_color_key_bg;
 	alpha: 1;
 }
 .bitmoji-card-action-btn,
 .bitmoji-card-secondary-text{
-	background_color: @color_set_a4;
-	color: @color_set_a1;
+	background_color: @web_color_accent;
+	color: @web_color_bg;
 	alpha: 1;
 }
 .sticker-pack-btn.for-remove,
 .error-card-btn{
-	background_color: @color_set_a1;
-	edge_color: @color_set_a4;
-	color: @color_set_a5;
+	background_color: @web_color_bg;
+	edge_color: @web_color_accent;
+	color: @web_color_label;
 	alpha: 1;
 }
 .sticker-pack-browse-add-btn{
-	background_color: @color_set_a6;
-	color: @color_set_a1;
+	background_color: @web_color_secondary_key_bg_pressed;
+	color: @web_color_bg;
 	alpha: 1;
 }
 .sticker-pack-browse-add-btn:selected{
-	background_color: @color_set_a4;
-	color: @color_set_a1;
+	background_color: @web_color_accent;
+	color: @web_color_bg;
 	alpha: 1;
 }
 
 .progress-bar{
-   color: @color_set_a4;
+   color: @web_color_accent;
 }
 .label.for-candidate-key.for-auto-correction-bold:selected,
 .label.for-candidate-key.for-auto-correction-bold{
-   color: @color_set_a5;
+   color: @web_color_label;
 }
 
 .icon.for-emojify-key:pressed{
-   background_color: @color_set_a3;
-   color: @color_set_a5;
+   background_color: @web_color_tertiary_key_bg;
+   color: @web_color_label;
 }
 
 .icon.for-emojify-key{
-   background_color: @color_set_a2;
-   color: @color_set_a5;
+   background_color: @web_color_key_bg;
+   color: @web_color_label;
 }
 .background.text-editing-selected-key,
 .label.text-editing-selected-key{
-   background_color: @color_set_a4;
-   color: @color_set_a1;
+   background_color: @web_color_accent;
+   color: @web_color_bg;
    alpha: 1;
 }
 .icon.for-category-key,
 .icon.for-category-key.with-underline{
-   color: @color_set_a5;
-   background_color: @color_set_a5;
+   color: @web_color_label;
+   background_color: @web_color_label;
    alpha: 1;
 }
 .icon.for-corpus-selector.deactive{
-   color: @color_set_a5;
-   background_color: @color_set_a5;
+   color: @web_color_label;
+   background_color: @web_color_label;
    alpha: 1;
 }
 
 .keyboard-spellchecker-text,
 .keyboard-spellchecker-text.highlight
 {
-	color: @color_set_a5;
+	color: @web_color_label;
 	alpha: 1;
 }
 .background-icon.inline-suggestion-tooltip-chip-ripple
 {
-	color: @color_set_a3;
+	color: @web_color_tertiary_key_bg;
 	alpha: 1;
 }
 .background-icon.spellchecker-suggestion
 {
-	color: @color_set_a2;
+	color: @web_color_key_bg;
 	alpha: 1;
 }
 .background-icon.spellchecker-suggestion-border
 {
-	color: @color_set_a2;
+	color: @web_color_key_bg;
 	alpha: 1;
 }
 .background-icon.spellchecker-suggestion.highlight
 {
-	color: @color_set_a3;
+	color: @web_color_tertiary_key_bg;
 	alpha: 1;
 }
 
 .background-icon.clipboard-item-suggestion-border
 {
-	color: @color_set_a3;
+	color: @web_color_tertiary_key_bg;
 	alpha: 1;
 }
 .background.text-editing-separator{
-    color: @color_set_a2;
+    color: @web_color_key_bg;
 	alpha: 1;
 }
 .sticker-pack-details-add-btn,
 .featured-sticker-pack-pass-btn{
-	background_color: @color_set_a4;
-	color: @color_set_a1;
-	edge_color: @color_set_a4;
+	background_color: @web_color_accent;
+	color: @web_color_bg;
+	edge_color: @web_color_accent;
 	alpha: 1;
 }
 .candidate-holder:activated{
-background_color: @color_set_a1;
+background_color: @web_color_bg;
 alpha: 1;
 }
 
 .keyboard-header-area.for-non-prime-body,
 .keyboard-non-prime-header-area{
-	background_color: @color_set_a1;
+	background_color: @web_color_bg;
 }
 .popup-item.for-action-popup:pressed{
-    color: @color_set_a1;
+    color: @web_color_bg;
 } 
 .popup-item.for-action-popup{
-	color: @color_set_a1;
+	color: @web_color_bg;
 }
 	
 .icon.for-floating-handle,
 .icon.floating_keyboard_editing_edge,
 .icon.clipboard-suggestion-paste-icon{
-	background_color: @color_set_a4;
-	color: @color_set_a4;
+	background_color: @web_color_accent;
+	color: @web_color_accent;
 	alpha: 1;
 }
 .icon.for-space-branding{
@@ -315,18 +315,18 @@ alpha: 1;
 }
 
 .background-icon.clipboard-item-suggestion{ 	
-    background_color: @color_set_a2; 	
-    color: @color_set_a2; 	
+    background_color: @web_color_key_bg; 	
+    color: @web_color_key_bg; 	
     alpha: 1; 	
 }
 
 .background-icon.clipboard-entry-suggestion{ 	
-    color: @color_set_a2;
+    color: @web_color_key_bg;
     alpha: 1; 	
 }
 
 .icon.clipboard-suggestion-arrow-icon{ 	
-    color: @color_set_a4;
+    color: @web_color_accent;
     alpha: 1; 	
 }
 .icon.for-category-key.with-underline:selected,
@@ -338,34 +338,34 @@ alpha: 1;
 .expression-highlight-underline:pressed,
 .expression-highlight-underline:selected
 {
-	background_color: @color_set_a4;
-	color: @color_set_a4;
+	background_color: @web_color_accent;
+	color: @web_color_accent;
 	alpha: 1;
 	}
 .icon.for-category-key:pressed,
 .icon.for-category-key:selected{
-	color: @color_set_a1;
+	color: @web_color_bg;
 	alpha: 1;
 	}
 .label.for-category-key.active,
 .label.for-category-key
 {
-	background_color: @color_set_a4;
-	color: @color_set_a4;
+	background_color: @web_color_accent;
+	color: @web_color_accent;
 	alpha: 1;
 	}
 .label.for-candidate-key:selected
 {
-	color: @color_set_a5;
+	color: @web_color_label;
 	alpha: 1;
 	}
 	
 .corpus-selector.function-key:pressed{
-	background_color: @color_set_a1;
+	background_color: @web_color_bg;
 }
 .corpus-selector:pressed,
 .corpus-selector:selected{
-	background_color: @color_set_a4;
+	background_color: @web_color_accent;
 }
 /* begin of searchbar color*/
 .expression-search-query,
@@ -380,33 +380,33 @@ alpha: 1;
 .expression-search-entry-icon.for-sticker,
 .expression-search-input-text{
 color: @color_label;
-background_color: @color_set_a3;
-hint_color: @color_set_a5;
+background_color: @web_color_tertiary_key_bg;
+hint_color: @web_color_label;
 alpha: 1;
 }
 
 .search-highlighted-text
 {
-color: @color_set_a5;
+color: @web_color_label;
 }
 
 .label.for-expression-search{
-color: @color_set_a5;
+color: @web_color_label;
 }
 .expression-search-result-box,
 .expression-search-box,
 .search-candidate-divider,
 .expression-search-container{
-background_color: @color_set_a3;
+background_color: @web_color_tertiary_key_bg;
 color: @color_base;
-hint_color: @color_set_a5;
+hint_color: @web_color_label;
 }
 
 /* end of searchbar color*/
 .corpus-selector,
 .icon.for-corpus-selector.deactive:pressed,
 .icon.for-corpus-selector.active{
-	color: @color_set_a1; 
+	color: @web_color_bg; 
 	alpha: 1;
 }
 /* Color common */
@@ -422,7 +422,7 @@ hint_color: @color_set_a5;
 
 }
 .icon.for-access-point-icon{
-	color: @color_set_a5;
+	color: @web_color_label;
 	alpha: 1;
 }
 .navbar,
@@ -456,25 +456,25 @@ hint_color: @color_set_a5;
 }
 .icon.active.for-function-key,
 .icon.active.for-shift-key {
-color: @color_set_a5;
+color: @web_color_label;
 alpha: 1;
 }
 .label.in-left-panel,
 .label.for-function-key,
 .icon.for-function-key {
-    color: @color_set_a5;
+    color: @web_color_label;
 alpha: 1;
 }
 .icon.for-action-key.for-action-default-key:pressed,
 .icon.for-action-key:pressed {
-    color: @color_set_a1;
-    background_color: @color_set_a1;
+    color: @web_color_bg;
+    background_color: @web_color_bg;
 	alpha: 1;
 }
 .icon.for-action-key.for-action-default-key,
 .icon.for-action-key {
-    color: @color_set_a1;
-    background_color: @color_set_a1;
+    color: @web_color_bg;
+    background_color: @web_color_bg;
 	alpha: 1;
 }
 .label.for-emoji-handwriting-hint {
@@ -488,10 +488,10 @@ alpha: 1;
 }
 
 .background-icon.for-action-key:pressed {
-    color: @color_set_a7;
+    color: @web_color_accent_pressed;
 }
 .background-icon.for-action-key {
-    color: @color_set_a4;
+    color: @web_color_accent;
 }
 .popup-item.for-action-popup:pressed {
     background_color: @color_state_action_pressed;
@@ -505,7 +505,7 @@ alpha: 1;
 
 .label.secondary.for-sticker-pack-author,
 .label.emoji-inline-category{
-	color: @color_set_a5;
+	color: @web_color_label;
 	alpha: 0.5;
 }
 .label.dynamic {
@@ -535,16 +535,16 @@ alpha: 1;
 
 .keytop.for-numpad-big-panel:pressed
 {
-	background_color:@color_set_a3;
+	background_color:@web_color_tertiary_key_bg;
 	}
 .keytop.for-candidate-key:pressed{
-	background_color: @color_set_a6;
+	background_color: @web_color_secondary_key_bg_pressed;
 	 }
 .keytop.transparent:pressed {
-    background_color: @color_set_a3;
+    background_color: @web_color_tertiary_key_bg;
 }
 .keytop.for-numpad-big-panel{
-	background_color:@color_set_a1;
+	background_color:@web_color_bg;
 	alpha: 0;
 	}
 
@@ -565,7 +565,7 @@ alpha: 1;
     background_color: @color_state_action_pressed;
 }
 .popup-item {
-    background_color: @color_set_a1;
+    background_color: @web_color_bg;
 }
 .keytop.for-dashboard-key.active,
 .label.for-dashboard-key.active {
@@ -576,7 +576,7 @@ alpha: 1;
     background_color: @color_state_space_bar;
 }
 .label.for-category-key.for-gif-keyboard:selected {
-    color: @color_set_a4;
+    color: @web_color_accent;
 }
 .label.for-category-key.for-gif-keyboard {
     color: @color_state_gif_category_text;
@@ -633,14 +633,14 @@ alpha: 1;
     background_color: @color_key_paging_scrollbar_background;
 }
 .icon.access-point-item {
-    color: @color_set_a2;
+    color: @web_color_key_bg;
     alpha: 1;
 }
 .background-icon.access-points-menu {
     color: @color_access_points_menu_background;
 }
 .background.access-point-panel-item {
-    color: @color_set_a2;
+    color: @web_color_key_bg;
 }
 .background.for-extension:activated {
     background_color: @color_generic_extension_background_activated;
@@ -687,7 +687,7 @@ alpha: 1;
     alpha: 1;
 }
 .expand-access-points-hint {
-    background_color: @color_set_a5;
+    background_color: @web_color_label;
 }
 .keytop.for-prime-header-tab:pressed {
     background_color: @color_state_prime_header_tab_pressed;
@@ -695,11 +695,11 @@ alpha: 1;
 
 /* Material rules*/
 .icon {
-  color: @color_set_a5;
+  color: @web_color_label;
 alpha: 1;
 }
 .icon.active {
-    color: @color_set_a5;
+    color: @web_color_label;
 alpha: 1;
 }
 .label.for-space-key {
@@ -718,10 +718,10 @@ alpha: 1;
 /* material specific */
 
 .keytop.for-numpad-big-panel-holder {
-    background_color: @color_set_a1;
+    background_color: @web_color_bg;
 }
 .track.for-gesture {
-    color: @color_set_a4;
+    color: @web_color_accent;
 }
 .label.for-popup-item:pressed {
     color: @color_state_popup_label_pressed;
@@ -740,19 +740,19 @@ alpha: 1;
     background_shape: "";
 }
 .background-icon.for-action-key.for-preview {
-   color: @color_set_a4;
+   color: @web_color_accent;
 }
 .for-google-icon-background {
-   google_icon_background_color: @color_set_a2;
+   google_icon_background_color: @web_color_key_bg;
 }
 .for-google-icon-foreground {
-   color: @color_set_a5;
+   color: @web_color_label;
 }
 .voiceime-mic-icon{
-   color: @color_set_a5;
+   color: @web_color_label;
 }
 .tooltip.icon{
-   color: @color_set_a4;
+   color: @web_color_accent;
 }
 .popup_v2 {
    background_color: @color_popup_background;
@@ -760,22 +760,22 @@ alpha: 1;
 
 .nav.back_key.tablet,
 .nav.back_key{
-   background_color: @color_set_a2;
+   background_color: @web_color_key_bg;
 }
 .nav.back_key.tablet:pressed,
 .nav.back_key:pressed{
-   background_color: @color_set_a3;
+   background_color: @web_color_tertiary_key_bg;
 }
 
 .voiceime-mic-circle{
-   background_color: @color_set_a3;
-   color: @color_set_a2;
+   background_color: @web_color_tertiary_key_bg;
+   color: @web_color_key_bg;
 }
 
 .expression-category-item-tablet:pressed,
 .expression-category-item-tablet:selected{
-   background_color: @color_set_a4;
-   color: @color_set_a1;
+   background_color: @web_color_accent;
+   color: @web_color_bg;
 }
 
 .sticker-header-item:pressed,
@@ -784,48 +784,48 @@ alpha: 1;
 .expression-category-item-cn:selected,
 .icon.for-category-key.with-circle:pressed,
 .icon.for-category-key.with-circle:selected{
-   background_color: @color_set_a6;
-   color: @color_set_a1;
+   background_color: @web_color_secondary_key_bg_pressed;
+   color: @web_color_bg;
 }
 
 .access-point-menu-icon{
-   background_color: @color_set_a2;
+   background_color: @web_color_key_bg;
 }
 
 .access-point-menu-icon:pressed{
-   background_color: @color_set_a3;
+   background_color: @web_color_tertiary_key_bg;
 }
 
 .access-point-menu-icon:activated{
-   background_color: @color_set_a6;
+   background_color: @web_color_secondary_key_bg_pressed;
 }
 
 .access-point-item-v2-background:pressed{
-   background_color: @color_set_a3;
+   background_color: @web_color_tertiary_key_bg;
 }
 
 .access-point-item-v2-background,
 .access-point-item-v2-background:activated{
-   background_color: @color_set_a2;
+   background_color: @web_color_key_bg;
 }
 
 .keyboard-textediting-btn-bg,
 .keyboard-textediting-btn-bg:pressed{
-   background_color: @color_set_a2;
+   background_color: @web_color_key_bg;
 }
 
 .keyboard-textediting-function-btn-bg,
 .keyboard-textediting-function-btn-bg:pressed{
-   background_color: @color_set_a3;
+   background_color: @web_color_tertiary_key_bg;
 }
 
 .icon.for-floating-handle,
 .icon.for-floating-handle:pressed{
-   background_color: @color_set_a5;
+   background_color: @web_color_label;
 }
 
 .voice-circle-background-color{
-   background_color: @color_set_a2;
+   background_color: @web_color_key_bg;
 }
 
 /* begin of pill shaped key */
