@@ -34,7 +34,7 @@
 @def color_state_key_dark @web_color_bg;
 @def color_state_key_transparent_pressed @web_color_key_bg;
 @def color_state_key_transparent @web_color_bg;
-@def color_state_space_bar_pressed @web_color_tertiary_key_bg;
+@def color_state_space_bar_pressed @web_color_secondary_key_bg;
 @def color_state_space_bar @web_color_key_bg;
 /* Undocumented */
 @def color_state_dashboard_mask_pressed @web_color_key_bg;
@@ -44,7 +44,7 @@
 @def color_keyboard_separator_numpad @web_color_bg;
 @def color_keyboard_top_separator @web_color_bg;
 /* Undocumented */
-@def color_candidate_separator @web_color_tertiary_key_bg;
+@def color_candidate_separator @web_color_secondary_key_bg;
 /* Undocumented */
 @def color_candidate_panel_separator @web_color_bg;
 @def color_key_paging_scrollbar @web_color_key_bg;
@@ -66,7 +66,7 @@
 @def color_keyboard_editing_overlay @web_color_key_bg;
 @def color_keyboard_editing_button @web_color_key_bg;
 @def color_notice_text @web_color_key_bg;
-@def color_state_prime_header_tab_pressed @web_color_tertiary_key_bg;
+@def color_state_prime_header_tab_pressed @web_color_secondary_key_bg;
 /* Override pre-defined variable definition */
 
 /* GIF rules */
@@ -89,12 +89,12 @@
 /* begin of pill shaped key colors */
 @def default_action_key_background_color @web_color_accent;
 @def default_action_key_background_color_pressed @web_color_accent_pressed;
-@def default_pill_shaped_key_color @web_color_secondary_key_bg_pressed;
+@def default_pill_shaped_key_color @web_color_tertiary_key_bg;
 @def default_pill_shaped_key_color_pressed @web_color_accent_pressed;
 @def default_pill_shaped_key_label_color @web_color_bg;
 @def default_pill_shaped_key_label_color_pressed @web_color_bg;
 @def default_borderless_space_bar_color @web_color_key_bg;
-@def default_borderless_space_bar_color_pressed @web_color_tertiary_key_bg;
+@def default_borderless_space_bar_color_pressed @web_color_secondary_key_bg;
 @def default_pill_shaped_key_icon_color @web_color_label;
 @def default_pill_shaped_key_icon_color_pressed @web_color_label;
 
@@ -124,7 +124,7 @@
 	color: @web_color_accent;
 }
 .translate.language.bg{
-    background_color: @web_color_tertiary_key_bg;
+    background_color: @web_color_secondary_key_bg;
 }
 .translate.queryholder{
     background_color: @web_color_key_bg;
@@ -173,11 +173,11 @@
 	alpha: 1;
 }
 .keyboard-clipboard-item{
-	background_color: @web_color_tertiary_key_bg;
+	background_color: @web_color_secondary_key_bg;
 	alpha: 1;
 }
 .keyboard-clipboard-popup{
-	background_color: @web_color_tertiary_key_bg;
+	background_color: @web_color_secondary_key_bg;
 	alpha: 1;
 }
 .keyboard-clipboard-tooltip{
@@ -217,7 +217,7 @@
 }
 
 .icon.for-emojify-key:pressed{
-   background_color: @web_color_tertiary_key_bg;
+   background_color: @web_color_secondary_key_bg;
    color: @web_color_label;
 }
 
@@ -251,7 +251,7 @@
 }
 .background-icon.inline-suggestion-tooltip-chip-ripple
 {
-	color: @web_color_tertiary_key_bg;
+	color: @web_color_secondary_key_bg;
 	alpha: 1;
 }
 .background-icon.spellchecker-suggestion
@@ -266,13 +266,13 @@
 }
 .background-icon.spellchecker-suggestion.highlight
 {
-	color: @web_color_tertiary_key_bg;
+	color: @web_color_secondary_key_bg;
 	alpha: 1;
 }
 
 .background-icon.clipboard-item-suggestion-border
 {
-	color: @web_color_tertiary_key_bg;
+	color: @web_color_secondary_key_bg;
 	alpha: 1;
 }
 .background.text-editing-separator{
@@ -380,7 +380,7 @@ alpha: 1;
 .expression-search-entry-icon.for-sticker,
 .expression-search-input-text{
 color: @color_label;
-background_color: @web_color_tertiary_key_bg;
+background_color: @web_color_secondary_key_bg;
 hint_color: @web_color_label;
 alpha: 1;
 }
@@ -397,7 +397,7 @@ color: @web_color_label;
 .expression-search-box,
 .search-candidate-divider,
 .expression-search-container{
-background_color: @web_color_tertiary_key_bg;
+background_color: @web_color_secondary_key_bg;
 color: @color_base;
 hint_color: @web_color_label;
 }
@@ -535,13 +535,13 @@ alpha: 1;
 
 .keytop.for-numpad-big-panel:pressed
 {
-	background_color:@web_color_tertiary_key_bg;
+	background_color:@web_color_secondary_key_bg;
 	}
 .keytop.for-candidate-key:pressed{
 	background_color: @web_color_secondary_key_bg_pressed;
 	 }
 .keytop.transparent:pressed {
-    background_color: @web_color_tertiary_key_bg;
+    background_color: @web_color_secondary_key_bg;
 }
 .keytop.for-numpad-big-panel{
 	background_color:@web_color_bg;
@@ -764,11 +764,11 @@ alpha: 1;
 }
 .nav.back_key.tablet:pressed,
 .nav.back_key:pressed{
-   background_color: @web_color_tertiary_key_bg;
+   background_color: @web_color_secondary_key_bg;
 }
 
 .voiceime-mic-circle{
-   background_color: @web_color_tertiary_key_bg;
+   background_color: @web_color_secondary_key_bg;
    color: @web_color_key_bg;
 }
 
@@ -793,7 +793,7 @@ alpha: 1;
 }
 
 .access-point-menu-icon:pressed{
-   background_color: @web_color_tertiary_key_bg;
+   background_color: @web_color_secondary_key_bg;
 }
 
 .access-point-menu-icon:activated{
@@ -801,7 +801,7 @@ alpha: 1;
 }
 
 .access-point-item-v2-background:pressed{
-   background_color: @web_color_tertiary_key_bg;
+   background_color: @web_color_secondary_key_bg;
 }
 
 .access-point-item-v2-background,
@@ -816,7 +816,7 @@ alpha: 1;
 
 .keyboard-textediting-function-btn-bg,
 .keyboard-textediting-function-btn-bg:pressed{
-   background_color: @web_color_tertiary_key_bg;
+   background_color: @web_color_secondary_key_bg;
 }
 
 .icon.for-floating-handle,
