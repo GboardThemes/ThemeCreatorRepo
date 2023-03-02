@@ -16,7 +16,7 @@
 	background_color: @web_color_secondary_key_bg;
 	alpha: 0.4;
     shadow_color: #00000066;
-    elevation: 1;
+    elevation: 1.0;
 }
 
 /* MD2 */
