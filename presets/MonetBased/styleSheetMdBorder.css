@@ -100,7 +100,7 @@
     elevation: 1;
 }
 .icon.for-keyboard-bottom-left-key{
-	color: @web_color_label;
+	color: @web_color_bg;
 	}
 .keytop.dark.for-scrollable-key-holder.for-numpad,
 .keytop.for-scrollable-key-holder.for-numpad {
