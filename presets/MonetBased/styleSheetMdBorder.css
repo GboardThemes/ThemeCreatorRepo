@@ -99,7 +99,7 @@
     shadow_color: #00000066;
     elevation: 1;
 }
-.icon.for-keyboard-bottom-left-key{
+.label.for-keyboard-bottom-left-key{
 	color: @web_color_bg;
 	}
 .keytop.dark.for-scrollable-key-holder.for-numpad,
