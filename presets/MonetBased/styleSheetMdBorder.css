@@ -81,7 +81,12 @@
 .divider.for-numpad-big-panel {
     visibility: gone;
 }
-
+.keytop.for-keyboard-bottom-left-key{
+    background_color: @web_color_tertiary_key_bg;
+}
+.keytop.for-keyboard-bottom-left-key:pressed {
+    background_color: @web_color_accent_pressed;
+}
 .keytop.dark.for-numpad-big-panel,
 .keytop.for-numpad-big-panel {
     shadow_color: #00000066;
