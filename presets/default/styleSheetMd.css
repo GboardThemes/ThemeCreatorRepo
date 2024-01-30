@@ -18,7 +18,7 @@
 @def color_label_header_active @web_color_label;
 @def color_label_header_inactive @web_color_label;
 /* Undocumented */
-@def color_state_label_candidate_selected @web_color_bg;
+@def color_state_label_candidate_selected @web_color_label;
 /* Undocumented */
 @def color_state_label_candidate @web_color_label;
 @def color_popup_label @web_color_label;
@@ -154,7 +154,7 @@
 }
 
 .translate.language_entry {
-    background_color: @web_color_accent;
+    background_color: @web_color_secondary_key_bg;
     color: @web_color_label;
 }
 
@@ -221,6 +221,16 @@
     alpha: 1;
 }
 
+.label.translate.language_entry {
+    color: @web_color_label;
+}
+
+.background-icon.for-emojify-key.second-progress-circle {
+    color: @web_color_key_bg;
+}
+
+
+.background-icon.for-emojify-key.progress-circle,
 .progress-bar {
     color: @web_color_accent;
 }
@@ -560,7 +570,7 @@
 }
 
 .keytop.for-numpad-big-panel:pressed {
-    background_color@web_color_secondary_key_bg;
+    background_color: @web_color_secondary_key_bg;
 }
 
 .keytop.for-candidate-key:pressed {
@@ -827,58 +837,16 @@
     color: @web_color_accent;
 }
 
-.icon_key_del {
-    image_ref: "icon_del.png";
-    image_height: 16.5;
-    image_scale_mode: fill_vertical;
-}
-
-.icon_key_shift_off {
-    image_ref: "icon_shift_off.png";
-    image_height: 30;
-    image_scale_mode: fill_vertical;
-}
-
-.icon_key_shift_on {
-    image_ref: "icon_shift_on.png";
-    image_height: 30;
-    image_scale_mode: fill_vertical;
-}
-
-.icon_key_shift_locked {
-    image_ref: "icon_shift_locked.png";
-    image_height: 30;
-    image_scale_mode: fill_vertical;
-}
-
-.icon_key_enter {
-    image_ref: "icon_enter.png";
-    image_height: 12;
-    image_scale_mode: fill_vertical;
-}
-
-.icon_key_ime_action_search {
-    image_ref: "icon_search.png";
-    image_height: 16.5;
-    image_scale_mode: fill_vertical;
-}
-
-.icon_key_ime_action_send {
-    image_ref: "icon_send.png";
-    image_height: 12;
-    image_scale_mode: fill_vertical;
-}
-
 .for-google-icon-background {
-    google_icon_background_color: @web_color_accent;
+    google_icon_background_color: @web_color_key_bg;
 }
 
 .for-google-icon-foreground {
-    color: @web_color_bg;
+    color: @web_color_label;
 }
 
 .voiceime-mic-icon {
-    color: @web_color_bg;
+    color: @web_color_label;
 }
 
 .tooltip.icon {
@@ -889,11 +857,86 @@
     background_color: @color_popup_background;
 }
 
+.nav.back_key.tablet,
+.nav.back_key {
+    background_color: @web_color_key_bg;
+}
+
+.nav.back_key.tablet:pressed,
+.nav.back_key:pressed {
+    background_color: @web_color_secondary_key_bg;
+}
+
+.voiceime-mic-circle {
+    background_color: @web_color_secondary_key_bg;
+    color: @web_color_key_bg;
+}
+
+.expression-category-item-tablet:pressed,
+.expression-category-item-tablet:selected {
+    background_color: @web_color_accent;
+    color: @web_color_key_bg;
+}
+
+.sticker-header-item:pressed,
+.sticker-header-item:selected,
+.expression-category-item-cn:pressed,
+.expression-category-item-cn:selected,
+.icon.for-category-key.with-circle:pressed,
+.icon.for-category-key.with-circle:selected {
+    background_color: @web_color_bg;
+    color: @web_color_bg;
+}
+
+.access-point-item-v2-background.item-ripple.on-surface,
+.access-point-menu-icon.entry.background-icon.header-icon-item-ripple,
+.access-point-menu-icon.background-icon.header-icon-item-ripple,
+.access-point-menu-icon.entry,
+.access-point-menu-icon {
+    background_color: @web_color_key_bg;
+}
+
+.access-point-menu-icon:pressed {
+    background_color: @web_color_secondary_key_bg;
+}
+
+.access-point-menu-icon:activated {
+    background_color: @web_color_bg;
+}
+
+.access-point-item-v2-background:pressed {
+    background_color: @web_color_secondary_key_bg;
+}
+
+.access-point-item-v2-background,
+.access-point-item-v2-background:activated {
+    background_color: @web_color_key_bg;
+    color: @web_color_key_bg;
+}
+
+.keyboard-textediting-btn-bg,
+.keyboard-textediting-btn-bg:pressed {
+    background_color: @web_color_key_bg;
+}
+
+.keyboard-textediting-function-btn-bg,
+.keyboard-textediting-function-btn-bg:pressed {
+    background_color: @web_color_secondary_key_bg;
+}
+
+.icon.for-floating-handle,
+.icon.for-floating-handle:pressed {
+    background_color: @web_color_bg;
+}
+
+.voice-circle-background-color {
+    background_color: @web_color_key_bg;
+}
+
 /* begin of pill shaped key */
 
 .keytop.for-space-bar {
     background_shape: rectangle;
-
 }
 
 .keytop.pill-shaped>.icon.for-action-key,
@@ -921,3 +964,147 @@
 }
 
 /* end of pill shaped key */
+
+.widget-keyboard.keyboard-body-area {
+    background_color: @web_color_bg;
+}
+
+.keyboard-header-area.for-expression-nav {
+    background_color: @web_color_bg;
+}
+
+.icon.for-voice-animation-icon.background-icon.header-icon-item-ripple {
+    color: @web_color_bg;
+}
+
+.voice-inactive-mic-circle {
+    background_color: @web_color_key_bg;
+
+}
+
+.voice-active-mic-circle {
+    background_color: @web_color_accent;
+}
+
+
+.bg-chip-item-suggestion {
+    background_color: @web_color_key_bg;
+
+}
+
+.item-ripple.no-background:activated {
+    background_color: @web_color_accent;
+}
+
+.item-ripple.no-background:selected {
+    background_color: @web_color_bg;
+}
+
+.item-ripple.no-background {
+    background_color: @web_color_bg;
+}
+
+.icon.keyboard_editing_edge_v2,
+.icon.keyboard_editing_edge_v2:activated {
+    background_color: @web_color_accent;
+    color: @web_color_accent;
+}
+
+.icon.keyboard_editing_button_move_v3,
+.icon.keyboard_editing_button_content_v3,
+.label.keyboard_editing_button_content_v3,
+.icon.keyboard_editing_button_content_rounded {
+    background_color: @web_color_accent;
+    color: @web_color_bg;
+}
+
+.icon.keyboard_editing_button_move,
+.icon.keyboard_editing_button,
+.icon.keyboard_editing_button_v3 {
+    background_color: @web_color_accent;
+    color: @web_color_accent;
+}
+
+.icon.keyboard_editing_edge_v2 {
+    background_color: @web_color_secondary_key_bg_pressed;
+    color: @web_color_secondary_key_bg_pressed;
+}
+
+.icon.translate.switch {
+    color: @web_color_accent;
+}
+
+.widget-item-background {
+    color: @web_color_label;
+}
+
+.bg-chip-item-suggestion {
+    background_color: @web_color_key_bg;
+}
+
+.bg-chip-item-suggestion.colored {
+    background_color: @web_color_secondary_key_bg;
+}
+
+.widget-item-background:pressed {
+    color: @web_color_label;
+}
+
+.widget-item-background:activated {
+    color: @web_color_label;
+}
+
+.access-point-drag-in-area-hint {
+    background_color: @web_color_secondary_key_bg;
+}
+
+.icon.side-frame-button {
+    background_color: @web_color_key_bg;
+    color: @web_color_label;
+}
+
+.icon.item-ripple.widget-item-background,
+.widget-popup-menu-wrapper {
+    background_color: @web_color_bg;
+}
+
+.widget-popup-menu-entry-label:selected {
+    color: @web_color_accent;
+}
+
+.widget-popup-menu-entry-end-icon {
+    color: @web_color_accent;
+}
+
+.divider.widget-entry-points-popup-menu {
+    color: @web_color_label;
+    alpha: 0.5;
+}
+
+.label.widget-popup-menu-entry-header-label:selected {
+    background_color: @web_color_key_bg;
+    color: @web_color_accent;
+}
+
+.label.widget-popup-menu-entry-header-label {
+    background_color: @web_color_key_bg;
+    color: @web_color_label;
+}
+
+.widget-tooltip-hint-ring,
+.widget-view-dragging-indicator {
+    background_color: @web_color_accent;
+    color: @web_color_accent;
+}
+
+.widget-icon-item-background_with_background:pressed {
+    color: @web_color_accent;
+}
+
+.widget-icon-item-background_with_background:activated {
+    color: @web_color_accent;
+}
+
+.widget-icon-item-background_with_background:selected {
+    color: @web_color_accent;
+}

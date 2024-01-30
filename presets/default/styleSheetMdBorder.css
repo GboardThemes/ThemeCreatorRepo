@@ -1,5 +1,3 @@
-;
-
 .keytop {
     elevation: 0;
     shadow_color: @web_color_key_bg;
@@ -51,6 +49,18 @@
 @def default_pill_shaped_key_label_color_pressed @web_color_label;
 
 /* end of pill shaped key colors */
+.icon.for-space-branding {
+    color: @internal_space_branding_color;
+    alpha: 0.3;
+}
+
+.label.for-space-key {
+    color: @web_color_label;
+}
+
+.label.for-space-key:pressed {
+    color: @web_color_label;
+}
 
 .keytop,
 .keytop.for-numpad-big-panel {
@@ -82,6 +92,10 @@
     shadow_color: @web_color_key_bg;
     elevation: 0;
     edge_width: 0;
+}
+
+.icon.for-keyboard-bottom-left-key {
+    color: @web_color_label;
 }
 
 .keytop:pressed {
