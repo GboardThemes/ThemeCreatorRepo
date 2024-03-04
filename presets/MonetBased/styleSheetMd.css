@@ -618,9 +618,10 @@
     background_color: @web_color_bg;
     alpha: 0;
 }
-
+.keytop.transparent {
+     background_color: #00000000;
+ }
 .keytop.for-candidate-key,
-.keytop.transparent,
 .keytop.for-prime-header-tab {
     background_color: @color_state_key_transparent;
 }

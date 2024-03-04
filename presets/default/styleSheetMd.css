@@ -587,7 +587,6 @@
 }
 
 .keytop.for-candidate-key,
-.keytop.transparent,
 .keytop.for-prime-header-tab {
     background_color: @web_color_bg;
 }
@@ -832,7 +831,9 @@
 .keytop.transparent {
     background_shape: "";
 }
-
+.keytop.transparent {
+    background_color: #00000000;
+}
 .background-icon.for-action-key.for-preview {
     color: @web_color_accent;
 }

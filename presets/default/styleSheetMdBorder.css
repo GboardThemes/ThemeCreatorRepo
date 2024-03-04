@@ -15,7 +15,7 @@
 .keytop.transparent {
     elevation: 0;
     shadow_color: @web_color_key_bg;
-    background_color: @web_color_secondary_key_bg;
+    background_color: #00000000;
 
 }
 

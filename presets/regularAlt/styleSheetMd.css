@@ -594,9 +594,10 @@
 .keytop.for-numpad-big-panel {
     background_color: @web_color_secondary_key_bg;
 }
-
+.keytop.transparent {
+    background_color: #00000000;
+}
 .keytop.for-candidate-key,
-.keytop.transparent,
 .keytop.for-prime-header-tab {
     background_color: @web_color_bg;
 }
