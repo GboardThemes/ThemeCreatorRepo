@@ -1170,9 +1170,11 @@
 .ocr_insert_panel.for-action-key:hovered,
 .ocr_insert_panel.for-action-key:pressed {
     color: @web_color_accent_pressed;
+    background_color: @web_color_accent_pressed;
 }
 
 .icon.floating_keyboard_editing_edge_v2,
 .ocr_insert_panel.for-action-key {
     color: @web_color_accent;
+    background_color: @web_color_accent;
 }
