@@ -50,6 +50,7 @@
 @def color_key_paging_scrollbar @web_color_key_bg;
 @def color_key_paging_scrollbar_background @web_color_bg;
 /* Revisit */
+@def default_bordered_key_color @web_color_key_bg;
 @def color_state_popup_item_pressed @web_color_accent;
 @def color_popup_background @web_color_key_bg;
 @def color_state_access_point_item_background @web_color_key_bg;
@@ -66,6 +67,7 @@
 @def color_keyboard_editing_overlay @web_color_key_bg;
 @def color_keyboard_editing_button @web_color_key_bg;
 @def color_notice_text @web_color_key_bg;
+@def color_state_prime_header_tab_pressed @web_color_secondary_key_bg;
 /* Override pre-defined variable definition */
 
 @def default_background_corner_radius 8;
@@ -80,7 +82,7 @@
 @def color_gif_search_bar_query_hint @web_color_label;
 
 /* Sticker */
-
+@def default_generic_accent_color_contrast @web_color_accent;
 @def color_sticker_btn_background @web_color_label;
 @def color_sticker_icon @web_color_label;
 @def color_sticker_accent_icon @web_color_label;
@@ -90,14 +92,15 @@
 /* begin of pill shaped key colors */
 @def default_action_key_background_color @web_color_accent;
 @def default_action_key_background_color_pressed @web_color_accent_pressed;
-@def default_pill_shaped_key_color @web_color_secondary_key_bg;
-@def default_pill_shaped_key_color_pressed @web_color_secondary_key_bg_pressed;
-@def default_pill_shaped_key_label_color @web_color_label;
-@def default_pill_shaped_key_label_color_pressed @web_color_label;
+@def default_pill_shaped_key_color @web_color_tertiary_key_bg;
+@def default_pill_shaped_key_color_pressed @web_color_tertiary_key_bg_pressed;
+@def default_pill_shaped_key_label_color @web_color_bg;
+@def default_pill_shaped_key_label_color_pressed @web_color_bg;
 @def default_borderless_space_bar_color @web_color_key_bg;
 @def default_borderless_space_bar_color_pressed @web_color_secondary_key_bg;
 @def default_pill_shaped_key_icon_color @web_color_label;
 @def default_pill_shaped_key_icon_color_pressed @web_color_label;
+
 
 
 .space_bar:pressed {
@@ -333,14 +336,21 @@
     alpha: 1;
 }
 
+
+.expression-category-item-cn,
+.expression-category-item-cn:pressed,
+.expression-category-item-cn:selected,
+.expression-category-item-tablet,
+.expression-category-item-tablet:pressed,
+.expression-category-item-tablet:selected,
+.expression-highlight-underline,
+.expression-highlight-underline:pressed,
+.expression-highlight-underline:selected,
+.sticker-header-item,
 .sticker-header-item:selected,
 .sticker-header-item:pressed,
-.icon.for-category-key.with-underline:selected,
-.icon.for-category-key.with-underline:pressed,
 .label.for-expression-search:selected,
-.label.for-expression-search:pressed,
-.expression-highlight-underline:pressed,
-.expression-highlight-underline:selected {
+.label.for-expression-search:pressed {
     background_color: @web_color_accent;
     color: @web_color_accent;
     alpha: 1;
@@ -349,6 +359,7 @@
 .icon.for-category-key:pressed,
 .icon.for-category-key:selected {
     color: @web_color_bg;
+    background_color: @web_color_accent;
     alpha: 1;
 }
 
@@ -569,13 +580,16 @@
     background_color: @color_state_key_dark;
 }
 
+.bg_dragged_candidate {
+    background_color: @web_color_bg;
+}
+
 .keytop.for-numpad-big-panel:pressed {
     background_color: @web_color_secondary_key_bg;
 }
 
 .keytop.for-candidate-key:pressed {
-    background_color: @web_color_accent;
-    alpha: 1;
+    background_color: #00000000;
 }
 
 .keytop.transparent:pressed {
@@ -586,7 +600,10 @@
     background_color: @web_color_secondary_key_bg;
 }
 
-.keytop.for-candidate-key,
+.keytop.for-candidate-key {
+    background_color: #00000000;
+}
+
 .keytop.for-prime-header-tab {
     background_color: @web_color_bg;
 }
@@ -796,11 +813,11 @@
 /* material specific */
 
 .keytop.for-numpad-big-panel-holder {
-    background_color: @web_color_secondary_key_bg;
     padding_ratio_left: 0;
     padding_ratio_top: 0;
     padding_ratio_right: 0;
     padding_ratio_bottom: 0;
+    background_color: @web_color_bg;
 }
 
 .track.for-gesture {
@@ -831,9 +848,11 @@
 .keytop.transparent {
     background_shape: "";
 }
+
 .keytop.transparent {
     background_color: #00000000;
 }
+
 .background-icon.for-action-key.for-preview {
     color: @web_color_accent;
 }
@@ -858,14 +877,10 @@
     background_color: @color_popup_background;
 }
 
-.nav.back_key.tablet,
-.nav.back_key {
+.icon.nav_back_key.item-ripple.on-surface,
+.nav_back_key.item-ripple.on-surface {
+    color: @web_color_key_bg;
     background_color: @web_color_key_bg;
-}
-
-.nav.back_key.tablet:pressed,
-.nav.back_key:pressed {
-    background_color: @web_color_secondary_key_bg;
 }
 
 .voiceime-mic-circle {
@@ -873,16 +888,7 @@
     color: @web_color_key_bg;
 }
 
-.expression-category-item-tablet:pressed,
-.expression-category-item-tablet:selected {
-    background_color: @web_color_accent;
-    color: @web_color_key_bg;
-}
 
-.sticker-header-item:pressed,
-.sticker-header-item:selected,
-.expression-category-item-cn:pressed,
-.expression-category-item-cn:selected,
 .icon.for-category-key.with-circle:pressed,
 .icon.for-category-key.with-circle:selected {
     background_color: @web_color_bg;
@@ -1108,4 +1114,12 @@
 
 .widget-icon-item-background_with_background:selected {
     color: @web_color_accent;
+}
+
+.clipboard.tips_icon_background {
+    background_color: @web_color_accent;
+}
+
+.clipboard.tips_icon {
+    color: @web_color_bg;
 }

@@ -50,6 +50,7 @@
 @def color_key_paging_scrollbar @web_color_key_bg;
 @def color_key_paging_scrollbar_background @web_color_bg;
 /* Revisit */
+@def default_bordered_key_color @web_color_key_bg;
 @def color_state_popup_item_pressed @web_color_accent;
 @def color_popup_background @web_color_key_bg;
 @def color_state_access_point_item_background @web_color_key_bg;
@@ -79,24 +80,26 @@
 @def color_gif_search_bar_query_hint @web_color_label;
 
 /* Sticker */
-
+@def default_generic_accent_color_contrast @web_color_accent;
 @def color_sticker_btn_background @web_color_label;
 @def color_sticker_icon @web_color_label;
 @def color_sticker_accent_icon @web_color_label;
 @def color_expression_footer_background @web_color_key_bg;
 @def color_expression_corpus_selector_background_active @web_color_accent;
-@def internal_space_branding_color @web_color_accent_pressed;
+@def internal_space_branding_color @web_color_label;
 /* begin of pill shaped key colors */
 @def default_action_key_background_color @web_color_accent;
 @def default_action_key_background_color_pressed @web_color_accent_pressed;
 @def default_pill_shaped_key_color @web_color_tertiary_key_bg;
-@def default_pill_shaped_key_color_pressed @web_color_accent_pressed;
+@def default_pill_shaped_key_color_pressed @web_color_tertiary_key_bg_pressed;
 @def default_pill_shaped_key_label_color @web_color_bg;
 @def default_pill_shaped_key_label_color_pressed @web_color_bg;
 @def default_borderless_space_bar_color @web_color_key_bg;
 @def default_borderless_space_bar_color_pressed @web_color_secondary_key_bg;
 @def default_pill_shaped_key_icon_color @web_color_label;
 @def default_pill_shaped_key_icon_color_pressed @web_color_label;
+
+
 
 .space_bar:pressed {
     background_color: @default_borderless_space_bar_color_pressed;
@@ -121,9 +124,6 @@
     background_shape: rectangle;
 }
 
-.icon.translate.switch {
-    color: @web_color_secondary_key_bg_pressed;
-}
 
 .translate.language.header {
     color: @web_color_accent;
@@ -174,7 +174,7 @@
 }
 
 .icon.clipboard-item-check-inner {
-    color: @web_color_bg;
+    color: @web_color_key_bg;
     alpha: 1;
 }
 
@@ -185,27 +185,13 @@
 }
 
 .keyboard-clipboard-item {
-    background_color: @web_color_secondary_key_bg;
+    background_color: @web_color_key_bg;
     alpha: 1;
 }
 
 .keyboard-clipboard-popup {
-    background_color: @web_color_secondary_key_bg;
+    background_color: @web_color_key_bg;
     alpha: 1;
-}
-
-.label.translate.language_entry {
-    color: @web_color_label;
-}
-
-.background-icon.for-emojify-key.second-progress-circle {
-    color: @web_color_key_bg;
-}
-
-.background-icon.for-emojify-key.progress-circle,
-.progress-bar {
-    color: @web_color_accent;
-
 }
 
 .keyboard-clipboard-tooltip {
@@ -229,8 +215,8 @@
 }
 
 .sticker-pack-browse-add-btn {
-    background_color: @web_color_secondary_key_bg_pressed;
-    color: @web_color_bg;
+    background_color: @web_color_bg;
+    color: @web_color_label;
     alpha: 1;
 }
 
@@ -240,20 +226,21 @@
     alpha: 1;
 }
 
+.label.translate.language_entry {
+    color: @web_color_label;
+}
+
+.background-icon.for-emojify-key.second-progress-circle {
+    color: @web_color_key_bg;
+}
+
+
+.background-icon.for-emojify-key.progress-circle,
 .progress-bar {
     color: @web_color_accent;
 }
 
-.label.for-candidate-key.for-auto-correction-bold:selected,
-.label.for-candidate-key.for-auto-correction-bold {
-    color: @web_color_label;
-}
-
-.icon.for-emojify-key:pressed {
-    background_color: @web_color_secondary_key_bg;
-    color: @web_color_label;
-}
-
+.icon.for-emojify-key:pressed,
 .icon.for-emojify-key {
     background_color: @web_color_key_bg;
     color: @web_color_label;
@@ -266,13 +253,7 @@
     alpha: 1;
 }
 
-.icon.for-category-key,
-.icon.for-category-key.with-underline {
-    color: @web_color_label;
-    background_color: @web_color_label;
-    alpha: 1;
-}
-
+.icon.for-category-key.with-underline,
 .icon.for-corpus-selector.deactive {
     color: @web_color_label;
     background_color: @web_color_label;
@@ -286,8 +267,8 @@
     alpha: 1;
 }
 
-.background-icon.inline-suggestion-tooltip-chip-ripple {
-    color: @web_color_secondary_key_bg;
+.background-icon.clipboard-item-suggestion-ripple {
+    background_color: @web_color_accent;
     alpha: 1;
 }
 
@@ -306,13 +287,8 @@
     alpha: 1;
 }
 
-.background-icon.clipboard-item-suggestion-border {
-    color: @web_color_secondary_key_bg;
-    alpha: 1;
-}
-
 .background.text-editing-separator {
-    color: @web_color_key_bg;
+    color: @web_color_bg;
     alpha: 1;
 }
 
@@ -325,19 +301,10 @@
 }
 
 .candidate-holder:activated {
-    background_color: @web_color_bg;
-    alpha: 1;
+    background_color: @web_color_accent;
 }
 
-.keyboard-header-area.for-non-prime-body,
-.keyboard-non-prime-header-area {
-    background_color: @web_color_bg;
-}
-
-.popup-item.for-action-popup:pressed {
-    color: @web_color_bg;
-}
-
+.popup-item.for-action-popup:pressed,
 .popup-item.for-action-popup {
     color: @web_color_bg;
 }
@@ -356,13 +323,13 @@
 }
 
 .background-icon.clipboard-item-suggestion {
-    background_color: @web_color_key_bg;
-    color: @web_color_key_bg;
+    background_color: @web_color_bg;
+    color: @web_color_bg;
     alpha: 1;
 }
 
 .background-icon.clipboard-entry-suggestion {
-    color: @web_color_key_bg;
+    color: @web_color_bg;
     alpha: 1;
 }
 
@@ -371,14 +338,21 @@
     alpha: 1;
 }
 
-.icon.for-category-key.with-underline:selected,
-.icon.for-category-key.with-underline:pressed,
+
+.expression-category-item-cn,
+.expression-category-item-cn:pressed,
+.expression-category-item-cn:selected,
+.expression-category-item-tablet,
+.expression-category-item-tablet:pressed,
+.expression-category-item-tablet:selected,
+.expression-highlight-underline,
+.expression-highlight-underline:pressed,
+.expression-highlight-underline:selected,
+.sticker-header-item,
 .sticker-header-item:selected,
 .sticker-header-item:pressed,
 .label.for-expression-search:selected,
-.label.for-expression-search:pressed,
-.expression-highlight-underline:pressed,
-.expression-highlight-underline:selected {
+.label.for-expression-search:pressed {
     background_color: @web_color_accent;
     color: @web_color_accent;
     alpha: 1;
@@ -387,6 +361,7 @@
 .icon.for-category-key:pressed,
 .icon.for-category-key:selected {
     color: @web_color_bg;
+    background_color: @web_color_accent;
     alpha: 1;
 }
 
@@ -403,7 +378,7 @@
 }
 
 .corpus-selector.function-key:pressed {
-    background_color: @web_color_bg;
+    background_color: @web_color_key_bg;
 }
 
 .corpus-selector:pressed,
@@ -420,30 +395,29 @@
 .expression-query-autofill-icon,
 .expression-search-result-icon,
 .expression-search-entry-icon,
+.search-highlighted-text,
 .expression-search-entry-icon-frame,
 .expression-search-entry-icon.for-sticker,
-.expression-search-input-text {
+.expression-search-input-text,
+.label.for-expression-search {
     color: @color_label;
-    background_color: @web_color_secondary_key_bg;
+    background_color: @web_color_key_bg;
     hint_color: @web_color_label;
     alpha: 1;
-}
-
-.search-highlighted-text {
-    color: @web_color_label;
-}
-
-.label.for-expression-search {
-    color: @web_color_label;
 }
 
 .expression-search-result-box,
 .expression-search-box,
 .search-candidate-divider,
 .expression-search-container {
-    background_color: @web_color_secondary_key_bg;
-    color: @color_base;
+    background_color: @web_color_key_bg;
+    color: @web_color_label;
     hint_color: @web_color_label;
+}
+
+.search-candidate-divider {
+    color: @web_color_label;
+    alpha: 0.3;
 }
 
 /* end of searchbar color*/
@@ -457,6 +431,9 @@
 /* Color common */
 .keyboard-body-area {
     background_color: @color_base;
+    background_shape: rectangle;
+    background_corner_radius_top_left: 0;
+    background_corner_radius_top_right: 0;
 }
 
 .keyboard-base-area,
@@ -465,7 +442,7 @@
 .candidates-area.expanded {
     background_shape: rectangle;
     background_color: @color_header;
-
+    color: @color_header;
 }
 
 .icon.for-access-point-icon {
@@ -505,7 +482,11 @@
     alpha: 1;
 }
 
-.icon.active.for-function-key,
+.icon.active.for-function-key {
+    color: @web_color_label;
+    alpha: 1;
+}
+
 .icon.active.for-shift-key {
     color: @web_color_label;
     alpha: 1;
@@ -518,15 +499,15 @@
     alpha: 1;
 }
 
-.icon.for-action-key.for-action-default-key:pressed,
-.icon.for-action-key:pressed {
+.icon.for-action-key:pressed,
+.icon.for-action-key {
     color: @web_color_bg;
     background_color: @web_color_bg;
     alpha: 1;
 }
 
-.icon.for-action-key.for-action-default-key,
-.icon.for-action-key {
+.icon.for-action-key.for-action-default-key:pressed,
+.icon.for-action-key.for-action-default-key {
     color: @web_color_bg;
     background_color: @web_color_bg;
     alpha: 1;
@@ -567,7 +548,6 @@
 .label.secondary.for-sticker-pack-author,
 .label.emoji-inline-category {
     color: @web_color_label;
-    alpha: 0.5;
 }
 
 .label.dynamic {
@@ -602,12 +582,16 @@
     background_color: @color_state_key_dark;
 }
 
+.bg_dragged_candidate {
+    background_color: @web_color_bg;
+}
+
 .keytop.for-numpad-big-panel:pressed {
     background_color: @web_color_secondary_key_bg;
 }
 
 .keytop.for-candidate-key:pressed {
-    background_color: @web_color_secondary_key_bg_pressed;
+    background_color: #00000000;
 }
 
 .keytop.transparent:pressed {
@@ -615,15 +599,15 @@
 }
 
 .keytop.for-numpad-big-panel {
-    background_color: @web_color_bg;
-    alpha: 0;
+    background_color: @web_color_secondary_key_bg;
 }
-.keytop.transparent {
-     background_color: #00000000;
- }
-.keytop.for-candidate-key,
+
+.keytop.for-candidate-key {
+    background_color: #00000000;
+}
+
 .keytop.for-prime-header-tab {
-    background_color: @color_state_key_transparent;
+    background_color: @web_color_bg;
 }
 
 .notice.for-notice-key {
@@ -641,7 +625,7 @@
 }
 
 .popup-item {
-    background_color: @web_color_bg;
+    background_color: @web_color_key_bg;
 }
 
 .keytop.for-dashboard-key.active,
@@ -709,10 +693,12 @@
 
 .divider.horizontal.top.for-keyboard-base-area {
     color: @color_keyboard_top_separator;
+    alpha: 0;
 }
 
 .divider.vertical.for-candidate-key {
     color: @color_candidate_separator;
+    alpha: 0.3;
 }
 
 .divider.vertical.for-candidate-side-panel {
@@ -787,7 +773,7 @@
 
 .label.text-editing-unactivate-key {
     color: @color_label_text_editing_unactivate_key;
-    alpha: 0.5;
+    alpha: 0.75;
 }
 
 .icon.extension-tab {
@@ -810,15 +796,11 @@
 }
 
 .icon.active {
-    color: @web_color_label;
+    color: @web_color_accent;
     alpha: 1;
 }
 
 .label.for-space-key {
-    color: @color_label_space_key;
-}
-
-.label.for-space-key:pressed {
     color: @color_label_space_key;
 }
 
@@ -865,6 +847,10 @@
     background_shape: "";
 }
 
+.keytop.transparent {
+    background_color: #00000000;
+}
+
 .background-icon.for-action-key.for-preview {
     color: @web_color_accent;
 }
@@ -889,14 +875,10 @@
     background_color: @color_popup_background;
 }
 
-.nav.back_key.tablet,
-.nav.back_key {
+.icon.nav_back_key.item-ripple.on-surface,
+.nav_back_key.item-ripple.on-surface {
+    color: @web_color_key_bg;
     background_color: @web_color_key_bg;
-}
-
-.nav.back_key.tablet:pressed,
-.nav.back_key:pressed {
-    background_color: @web_color_secondary_key_bg;
 }
 
 .voiceime-mic-circle {
@@ -904,16 +886,7 @@
     color: @web_color_key_bg;
 }
 
-.expression-category-item-tablet:pressed,
-.expression-category-item-tablet:selected {
-    background_color: @web_color_accent;
-    color: @web_color_key_bg;
-}
 
-.sticker-header-item:pressed,
-.sticker-header-item:selected,
-.expression-category-item-cn:pressed,
-.expression-category-item-cn:selected,
 .icon.for-category-key.with-circle:pressed,
 .icon.for-category-key.with-circle:selected {
     background_color: @web_color_bg;
@@ -1018,12 +991,10 @@
     background_color: @web_color_accent;
 }
 
+
 .bg-chip-item-suggestion {
     background_color: @web_color_key_bg;
-}
 
-.bg-chip-item-suggestion.colored {
-    background_color: @web_color_secondary_key_bg;
 }
 
 .item-ripple.no-background:activated {
@@ -1070,6 +1041,14 @@
 
 .widget-item-background {
     color: @web_color_label;
+}
+
+.bg-chip-item-suggestion {
+    background_color: @web_color_key_bg;
+}
+
+.bg-chip-item-suggestion.colored {
+    background_color: @web_color_secondary_key_bg;
 }
 
 .widget-item-background:pressed {
@@ -1133,4 +1112,12 @@
 
 .widget-icon-item-background_with_background:selected {
     color: @web_color_accent;
+}
+
+.clipboard.tips_icon_background {
+    background_color: @web_color_accent;
+}
+
+.clipboard.tips_icon {
+    color: @web_color_bg;
 }
