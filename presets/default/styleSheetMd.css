@@ -92,10 +92,10 @@
 /* begin of pill shaped key colors */
 @def default_action_key_background_color @web_color_accent;
 @def default_action_key_background_color_pressed @web_color_accent_pressed;
-@def default_pill_shaped_key_color @web_color_tertiary_key_bg;
-@def default_pill_shaped_key_color_pressed @web_color_tertiary_key_bg_pressed;
-@def default_pill_shaped_key_label_color @web_color_bg;
-@def default_pill_shaped_key_label_color_pressed @web_color_bg;
+@def default_pill_shaped_key_color @web_color_secondary_key_bg;
+@def default_pill_shaped_key_color_pressed @web_color_secondary_key_bg_pressed;
+@def default_pill_shaped_key_label_color @web_color_label;
+@def default_pill_shaped_key_label_color_pressed @web_color_label;
 @def default_borderless_space_bar_color @web_color_key_bg;
 @def default_borderless_space_bar_color_pressed @web_color_secondary_key_bg;
 @def default_pill_shaped_key_icon_color @web_color_label;

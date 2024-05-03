@@ -126,7 +126,7 @@
 
 
 .translate.language.header {
-    color: @web_color_accent;
+    color: @web_color_tertiary_key_bg;
 }
 
 .translate.language.bg {
@@ -135,7 +135,7 @@
 
 .translate.queryholder {
     background_color: @web_color_key_bg;
-    color: @web_color_accent;
+    color: @web_color_tertiary_key_bg;
 }
 
 .translate-query {
@@ -151,11 +151,11 @@
 }
 
 .translate.language.separator {
-    background_color: @web_color_accent;
+    background_color: @web_color_tertiary_key_bg;
 }
 
 .translate.language_entry {
-    background_color: @web_color_accent;
+    background_color: @web_color_tertiary_key_bg;
     color: @web_color_label;
 }
 
@@ -1115,7 +1115,7 @@
 }
 
 .clipboard.tips_icon_background {
-    background_color: @web_color_accent;
+    background_color: @web_color_tertiary_key_bg;
 }
 
 .clipboard.tips_icon {
